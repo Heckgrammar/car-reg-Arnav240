@@ -9,7 +9,7 @@
             string carReg = Console.ReadLine();
             while (carReg.Length > 8)
             {
-                string displayMessge = " is not valid";
+                string displayMessge = $"{carReg} is not valid"; 
                 Console.Write(displayMessge);
                 carReg = Console.ReadLine();
             }
@@ -21,15 +21,17 @@
             }
             else
             {
-                charge = hours * 2;
+                charge = (hours * 2) + 2;
             }
             Console.WriteLine(charge);
 
             // rewrite line 12 to concatenate the car registration with the string is not valid
             // store the result in display message
+            // Done
 
             // the charge for parking for two or more hours is changed to include an additional £2 fee
             // rewrite line 24 to show this change
+            // Done
 
             // Test both changes with the following test data
             // A369 WNV1
